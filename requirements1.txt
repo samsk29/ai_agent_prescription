@@ -1,0 +1,35 @@
+# 📌 Core Dependencies
+python-dotenv            # Load environment variables
+pydantic                 # Data validation
+
+# 📌 Email Handling
+imapclient               # Fetch emails via IMAP
+mail-parser              # Parse email content
+
+# 📌 AI & NLP
+openai                   # OpenAI API for LLM
+langchain                # LLM Orchestration
+chromadb                 # VectorDB for RAG
+faiss-cpu                # Alternative vector database (optional)
+groq                     # Free Infernecing
+langchain-community      # Accessing Free Inferencing and Embedding Models
+ollama                   # Free Models
+langchain_ollama
+
+# 📌 AI Agents & Task Orchestration
+crewai                   # Multi-agent LLM automation
+celery                   # Async task processing
+redis                    # Celery broker
+
+# 📌 Database & API
+fastapi                  # API Framework
+uvicorn                  # FastAPI Server
+sqlalchemy               # ORM for PostgreSQL
+psycopg2                 # PostgreSQL Database Driver
+firebase-admin           # Firebase Integration (if needed)
+mysql-connector-python   # For Xampp
+pymysql 
+# 📌 Utils
+tqdm                     # Progress bar
+loguru                   # Logging
+

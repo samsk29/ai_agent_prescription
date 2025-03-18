@@ -1,0 +1,66 @@
+fetch_unread_email:
+  description: Utilize fetch_email to retrieve an unread email. Extract and output metadata 
+    such as sender email, sender name, message ID, subject, 
+    and classify the email as {mail_type} (fresh or replied).
+  expected_output: Email metadata including sender details, message ID, subject, and
+    mail type flag {mail_type}.
+  async_execution: false
+  agent: email_fetcher
+extract_email_body:
+  description: 'Based on the {mail_type} from the email metadata, determine the extraction
+    process: if {mail_type} is fresh, invoke extract_fresh_body to extract {email_body};
+    if replied, use fetch_thread to extract the concatenated user messages.'
+  expected_output: Email metadata including sender details, message ID, subject, and Extracted email body as {email_body} reflecting the relevant content
+    from the email.
+  async_execution: false
+  agent: email_content_extractor
+  context:
+  - fetch_unread_email
+extract_patient_data:
+  description: Process the extracted email content ({email_body}) using extract_patients_data
+    to retrieve necessary patient details and form a structured JSON output {patient_data_json}.
+  expected_output: A JSON structure {patient_data_json} containing all extracted patient
+    information with missing field as null and Email metadata including sender details, message ID and subject from the email.
+  async_execution: false
+  agent: patient_data_extractor
+  context:
+  - extract_email_body
+validate_extracted_data:
+  description: Use the validation tool with {patient_data_json} and {required_fields}
+    to check for missing required patient information. Generate a validation result
+    {validation_result} along with a list of {missing_fields} and if subject is emply then consider "".
+  expected_output: Validation result {validation_result} indicating completeness and
+    an array of {missing_fields} if any are missing with Email metadata including sender details, message ID and subject
+    also give pickle file with {validation_result} with current time and status.
+  async_execution: false
+  agent: data_validation
+  context:
+  - extract_patient_data
+send_follow_up_email:
+  description: If there are any {missing_fields} as identified in {validation_result}, 
+    use send_email and recipient details from the email metadata to send a 
+    follow-up email requesting the missing information.
+    If no {missing_fields} are detected, use the send_confirmation_email function to 
+    notify the recipient that all required information has been successfully received
+  expected_output: 'Confirmation of follow-up email sent: {email_sent_confirmation}.'
+  async_execution: false
+  agent: email_sender
+  context:
+  - validate_extracted_data
+store_patient_data:
+  description: >
+    If the all patient details are present and accurate, securely store the structured data in Verodat using the MCP Server API. Ensure data integrity and compliance with storage protocols.
+  expected_output: Confirmation of successful data storage in Verodat.
+  async_execution: false
+  agent: data_storage_agent
+  context:
+  - validate_extracted_data
+send_reminder_email:
+  description: If a patient has not responded within 48 hours, use `SendReminderAndEscalationTool` to send a reminder, 
+    including the {missing_fields} from {validation_result}. Ensure the email is part of the original 
+    thread using `In-Reply-To` and `References` headers.
+    If no response is received within 96 hours, escalate the issue by notifying the clinic.
+  expected_output: 'Reminder or escalation email sent: {email_sent_confirmation}.'
+  async_execution: false
+  agent: reminder_email_sender
+

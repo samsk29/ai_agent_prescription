@@ -1,0 +1,619 @@
+[
+    {
+        "email": "sam_sk@example.com",
+        "subject": "Re:",
+        "message_id": "<CANfWoJALCnM1L4aCs_Bt3czHhJBQND2EQL=8eqCEkiAdZVUAuw@mail.gmail.com>",
+        "extracted_data": {
+            "patient_details": {
+                "name": "Sam Sk",
+                "address": "456 Elm St",
+                "email": "sam_sk@example.com"
+            },
+            "pharmacy": {
+                "name": "ABC Pharmacy",
+                "address": "123 Main St"
+            },
+            "vital_signs": {
+                "blood_pressure": "120/80",
+                "heart_rate": 72,
+                "date_of_readings": "2025-02-20"
+            },
+            "medications": {
+                "drug_name": "dolo",
+                "strength": 175,
+                "repeats": 2
+            }
+        }
+    },
+    {
+        "email": "sam_sk@example.com",
+        "subject": "Re:",
+        "message_id": "<CANfWoJA8hyYa2NrCr1St=i4GD_mL-WwakmkydrSGOxsj-LWq9Q@mail.gmail.com>",
+        "extracted_data": {
+            "patient_details": {
+                "name": "Sam Sk",
+                "address": "456 Elm St",
+                "email": "sam_sk@example.com"
+            },
+            "pharmacy": {
+                "name": "ABC Pharmacy",
+                "address": "123 Main St"
+            },
+            "vital_signs": {
+                "blood_pressure": "120/80",
+                "heart_rate": 72,
+                "date_of_readings": "2025-02-20"
+            },
+            "medications": {
+                "drug_name": "dolo",
+                "strength": 175,
+                "repeats": 2
+            }
+        }
+    },
+    {
+        "email": "JohnDoe@example.com",
+        "subject": "",
+        "message_id": "<CANfWoJCTTZsZ3zes5Ohm-DGjbBJXuV7S40y7s76m7vhXOhc4kg@mail.gmail.com>",
+        "extracted_data": {
+            "patient_details": {
+                "name": "John Doe",
+                "address": "456 Elm St",
+                "email": "JohnDoe@example.com"
+            },
+            "pharmacy": {
+                "name": "ABC Pharmacy",
+                "address": "123 Main St"
+            },
+            "vital_signs": {
+                "blood_pressure": "120/80",
+                "heart_rate": 72,
+                "date_of_readings": "2025-02-20"
+            },
+            "medications": {
+                "drug_name": "Lisinopril",
+                "strength": "10mg",
+                "repeats": 2
+            }
+        }
+    },
+    {
+        "email": "JohnDoe@example.com",
+        "subject": "",
+        "message_id": "<CANfWoJBVpWC1Yv0AbThGyCT-+0yY8VBtp3MRfuWU8kGWU8H66Q@mail.gmail.com>",
+        "extracted_data": {
+            "patient_details": {
+                "name": "John Doe",
+                "address": "456 Elm St",
+                "email": "JohnDoe@example.com"
+            },
+            "pharmacy": {
+                "name": "ABC Pharmacy",
+                "address": "123 Main St"
+            },
+            "vital_signs": {
+                "blood_pressure": "120/80",
+                "heart_rate": 72,
+                "date_of_readings": "2025-02-20"
+            },
+            "medications": {
+                "drug_name": "Atorvastatin",
+                "strength": "20mg",
+                "repeats": 2
+            }
+        }
+    },
+    {
+        "email": "JohnDoe@example.com",
+        "subject": "",
+        "message_id": "<CANfWoJCTTZsZ3zes5Ohm-DGjbBJXuV7S40y7s76m7vhXOhc4kg@mail.gmail.com>",
+        "extracted_data": {
+            "patient_details": {
+                "name": "John Doe",
+                "address": "456 Elm St",
+                "email": "JohnDoe@example.com"
+            },
+            "pharmacy": {
+                "name": "ABC Pharmacy",
+                "address": "123 Main St"
+            },
+            "vital_signs": {
+                "blood_pressure": "120/80",
+                "heart_rate": 72,
+                "date_of_readings": "2025-02-20"
+            },
+            "medications": [
+                {
+                    "drug_name": "Lisinopril",
+                    "strength": "10mg",
+                    "repeats": 2
+                },
+                {
+                    "drug_name": "Atorvastatin",
+                    "strength": "20mg",
+                    "repeats": 1
+                }
+            ]
+        }
+    },
+    {
+        "email": "sam@example.com",
+        "subject": "",
+        "message_id": "<CANfWoJDC5_OoTnPo-iY5Bx6-PTWqva=xEspHkda13bcBxVTneQ@mail.gmail.com>",
+        "extracted_data": {
+            "patient_details": {
+                "name": "sam sk",
+                "address": "456 Elm St",
+                "email": "sam@example.com"
+            },
+            "pharmacy": {
+                "name": "ABC Pharmacy",
+                "address": "123 Main St"
+            },
+            "vital_signs": {
+                "blood_pressure": "120/80",
+                "heart_rate": 72,
+                "date_of_readings": "2025-02-20"
+            },
+            "medications": [
+                {
+                    "drug_name": "dolo",
+                    "strength": "20mg",
+                    "repeats": 1
+                }
+            ]
+        }
+    },
+    {
+        "email": "JohnDoe@example.com",
+        "subject": "",
+        "message_id": "<CANfWoJCTTZsZ3zes5Ohm-DGjbBJXuV7S40y7s76m7vhXOhc4kg@mail.gmail.com>",
+        "extracted_data": {
+            "patient_details": {
+                "name": "John Doe",
+                "address": "456 Elm St",
+                "email": "JohnDoe@example.com"
+            },
+            "pharmacy": {
+                "name": "ABC Pharmacy",
+                "address": "123 Main St"
+            },
+            "vital_signs": {
+                "blood_pressure": "120/80",
+                "heart_rate": 72,
+                "date_of_readings": "2025-02-20"
+            },
+            "medications": [
+                {
+                    "drug_name": "Lisinopril",
+                    "strength": "10mg",
+                    "repeats": 2
+                },
+                {
+                    "drug_name": "Atorvastatin",
+                    "strength": "20mg",
+                    "repeats": 1
+                }
+            ]
+        }
+    },
+    {
+        "email": "sam@example.com",
+        "subject": "",
+        "message_id": "<CANfWoJDC5_OoTnPo-iY5Bx6-PTWqva=xEspHkda13bcBxVTneQ@mail.gmail.com>",
+        "extracted_data": {
+            "patient_details": {
+                "name": "sam sk",
+                "address": "456 Elm St",
+                "email": "sam@example.com"
+            },
+            "pharmacy": {
+                "name": "ABC Pharmacy",
+                "address": "123 Main St"
+            },
+            "vital_signs": {
+                "blood_pressure": "120/80",
+                "heart_rate": 72,
+                "date_of_readings": "2025-02-20"
+            },
+            "medications": [
+                {
+                    "drug_name": "dolo",
+                    "strength": "20mg",
+                    "repeats": 1
+                }
+            ]
+        }
+    },
+    {
+        "email": "john.doe@example.com",
+        "subject": "",
+        "message_id": "<CANfWoJAS46ZYRg+OcyHT72oo=QgB3bMJBsXegBOD1RJ-wjPC7Q@mail.gmail.com>",
+        "extracted_data": {
+            "patient_details": {
+                "name": "John Doe",
+                "address": "456 Elm St",
+                "email": "john.doe@example.com"
+            },
+            "pharmacy": {
+                "name": "ABC Pharmacy",
+                "address": "123 Main St"
+            },
+            "vital_signs": {
+                "blood_pressure": "120/80",
+                "heart_rate": 72,
+                "date_of_readings": "2025-02-20"
+            },
+            "medications": []
+        }
+    },
+    {
+        "email": "JohnDoe@example.com",
+        "subject": "",
+        "message_id": "<CANfWoJCTTZsZ3zes5Ohm-DGjbBJXuV7S40y7s76m7vhXOhc4kg@mail.gmail.com>",
+        "extracted_data": {
+            "patient_details": {
+                "name": "John Doe",
+                "address": "456 Elm St",
+                "email": "JohnDoe@example.com"
+            },
+            "pharmacy": {
+                "name": "ABC Pharmacy",
+                "address": "123 Main St"
+            },
+            "vital_signs": {
+                "blood_pressure": "120/80",
+                "heart_rate": 72,
+                "date_of_readings": "2025-02-20"
+            },
+            "medications": [
+                {
+                    "drug_name": "Lisinopril",
+                    "strength": "10mg",
+                    "repeats": 2
+                },
+                {
+                    "drug_name": "Atorvastatin",
+                    "strength": "20mg",
+                    "repeats": 1
+                }
+            ]
+        }
+    },
+    {
+        "email": "sam@example.com",
+        "subject": "",
+        "message_id": "<CANfWoJDC5_OoTnPo-iY5Bx6-PTWqva=xEspHkda13bcBxVTneQ@mail.gmail.com>",
+        "extracted_data": {
+            "patient_details": {
+                "name": "sam sk",
+                "address": "456 Elm St",
+                "email": "sam@example.com"
+            },
+            "pharmacy": {
+                "name": "ABC Pharmacy",
+                "address": "123 Main St"
+            },
+            "vital_signs": {
+                "blood_pressure": "120/80",
+                "heart_rate": 72,
+                "date_of_readings": "2025-02-20"
+            },
+            "medications": [
+                {
+                    "drug_name": "dolo",
+                    "strength": "20mg",
+                    "repeats": 1
+                }
+            ]
+        }
+    },
+    {
+        "email": "john.doe@example.com",
+        "subject": "",
+        "message_id": "<CANfWoJAS46ZYRg+OcyHT72oo=QgB3bMJBsXegBOD1RJ-wjPC7Q@mail.gmail.com>",
+        "extracted_data": {
+            "patient_details": {
+                "name": "John Doe",
+                "address": "456 Elm St",
+                "email": "john.doe@example.com"
+            },
+            "pharmacy": {
+                "name": "ABC Pharmacy",
+                "address": "123 Main St"
+            },
+            "vital_signs": {
+                "blood_pressure": "120/80",
+                "heart_rate": 72,
+                "date_of_readings": "2025-02-20"
+            },
+            "medications": []
+        }
+    },
+    {
+        "email": "JohnDoe@example.com",
+        "subject": "",
+        "message_id": "<CANfWoJCTTZsZ3zes5Ohm-DGjbBJXuV7S40y7s76m7vhXOhc4kg@mail.gmail.com>",
+        "extracted_data": {
+            "patient_details": {
+                "name": "John Doe",
+                "address": "456 Elm St",
+                "email": "JohnDoe@example.com"
+            },
+            "pharmacy": {
+                "name": "ABC Pharmacy",
+                "address": "123 Main St"
+            },
+            "vital_signs": {
+                "blood_pressure": "120/80",
+                "heart_rate": 72,
+                "date_of_readings": "2025-02-20"
+            },
+            "medications": [
+                {
+                    "drug_name": "Lisinopril",
+                    "strength": "10mg",
+                    "repeats": 2
+                },
+                {
+                    "drug_name": "Atorvastatin",
+                    "strength": "20mg",
+                    "repeats": 1
+                }
+            ]
+        }
+    },
+    {
+        "email": "sam@example.com",
+        "subject": "",
+        "message_id": "<CANfWoJDC5_OoTnPo-iY5Bx6-PTWqva=xEspHkda13bcBxVTneQ@mail.gmail.com>",
+        "extracted_data": {
+            "patient_details": {
+                "name": "sam sk",
+                "address": "456 Elm St",
+                "email": "sam@example.com"
+            },
+            "pharmacy": {
+                "name": "ABC Pharmacy",
+                "address": "123 Main St"
+            },
+            "vital_signs": {
+                "blood_pressure": "120/80",
+                "heart_rate": 72,
+                "date_of_readings": "2025-02-20"
+            },
+            "medications": [
+                {
+                    "drug_name": "dolo",
+                    "strength": "20mg",
+                    "repeats": 1
+                }
+            ]
+        }
+    },
+    {
+        "email": "john.doe@example.com",
+        "subject": "",
+        "message_id": "<CANfWoJAS46ZYRg+OcyHT72oo=QgB3bMJBsXegBOD1RJ-wjPC7Q@mail.gmail.com>",
+        "extracted_data": {
+            "patient_details": {
+                "name": "John Doe",
+                "address": "456 Elm St",
+                "email": "john.doe@example.com"
+            },
+            "pharmacy": {
+                "name": "ABC Pharmacy",
+                "address": "123 Main St"
+            },
+            "vital_signs": {
+                "blood_pressure": "120/80",
+                "heart_rate": 72,
+                "date_of_readings": "2025-02-20"
+            },
+            "medications": []
+        }
+    },
+    {
+        "email": "JohnDoe@example.com",
+        "subject": "",
+        "message_id": "<CANfWoJCTTZsZ3zes5Ohm-DGjbBJXuV7S40y7s76m7vhXOhc4kg@mail.gmail.com>",
+        "extracted_data": {
+            "patient_details": {
+                "name": "John Doe",
+                "address": "456 Elm St",
+                "email": "JohnDoe@example.com"
+            },
+            "pharmacy": {
+                "name": "ABC Pharmacy",
+                "address": "123 Main St"
+            },
+            "vital_signs": {
+                "blood_pressure": "120/80",
+                "heart_rate": 72,
+                "date_of_readings": "2025-02-20"
+            },
+            "medications": [
+                {
+                    "drug_name": "Lisinopril",
+                    "strength": "10mg",
+                    "repeats": 2
+                },
+                {
+                    "drug_name": "Atorvastatin",
+                    "strength": "20mg",
+                    "repeats": 1
+                }
+            ]
+        }
+    },
+    {
+        "email": "sam@example.com",
+        "subject": "",
+        "message_id": "<CANfWoJDC5_OoTnPo-iY5Bx6-PTWqva=xEspHkda13bcBxVTneQ@mail.gmail.com>",
+        "extracted_data": {
+            "patient_details": {
+                "name": "sam sk",
+                "address": "456 Elm St",
+                "email": "sam@example.com"
+            },
+            "pharmacy": {
+                "name": "ABC Pharmacy",
+                "address": "123 Main St"
+            },
+            "vital_signs": {
+                "blood_pressure": "120/80",
+                "heart_rate": 72,
+                "date_of_readings": "2025-02-20"
+            },
+            "medications": [
+                {
+                    "drug_name": "dolo",
+                    "strength": "20mg",
+                    "repeats": 1
+                }
+            ]
+        }
+    },
+    {
+        "email": "john.doe@example.com",
+        "subject": "",
+        "message_id": "<CANfWoJAS46ZYRg+OcyHT72oo=QgB3bMJBsXegBOD1RJ-wjPC7Q@mail.gmail.com>",
+        "extracted_data": {
+            "patient_details": {
+                "name": "John Doe",
+                "address": "456 Elm St",
+                "email": "john.doe@example.com"
+            },
+            "pharmacy": {
+                "name": "ABC Pharmacy",
+                "address": "123 Main St"
+            },
+            "vital_signs": {
+                "blood_pressure": "120/80",
+                "heart_rate": 72,
+                "date_of_readings": "2025-02-20"
+            },
+            "medications": []
+        }
+    },
+    {
+        "email": "JohnDoe@example.com",
+        "subject": "",
+        "message_id": "<CANfWoJCTTZsZ3zes5Ohm-DGjbBJXuV7S40y7s76m7vhXOhc4kg@mail.gmail.com>",
+        "extracted_data": {
+            "patient_details": {
+                "name": "John Doe",
+                "address": "456 Elm St",
+                "email": "JohnDoe@example.com"
+            },
+            "pharmacy": {
+                "name": "ABC Pharmacy",
+                "address": "123 Main St"
+            },
+            "vital_signs": {
+                "blood_pressure": "120/80",
+                "heart_rate": 72,
+                "date_of_readings": "2025-02-20"
+            },
+            "medications": {
+                "drug_name": "Lisinopril",
+                "strength": "10mg",
+                "repeats": 2
+            }
+        }
+    },
+    {
+        "email": "sam@example.com",
+        "subject": "",
+        "message_id": "<CANfWoJDC5_OoTnPo-iY5Bx6-PTWqva=xEspHkda13bcBxVTneQ@mail.gmail.com>",
+        "extracted_data": {
+            "patient_details": {
+                "name": "sam sk",
+                "address": "456 Elm St",
+                "email": "sam@example.com"
+            },
+            "pharmacy": {
+                "name": "ABC Pharmacy",
+                "address": "123 Main St"
+            },
+            "vital_signs": {
+                "blood_pressure": "120/80",
+                "heart_rate": 72,
+                "date_of_readings": "2025-02-20"
+            },
+            "medications": {
+                "drug_name": "dolo",
+                "strength": "20mg",
+                "repeats": 1
+            }
+        }
+    },
+    {
+        "email": "JohnDoe@example.com",
+        "subject": "",
+        "message_id": "<CANfWoJCTTZsZ3zes5Ohm-DGjbBJXuV7S40y7s76m7vhXOhc4kg@mail.gmail.com>",
+        "extracted_data": {
+            "patient_details": {
+                "name": "John Doe",
+                "address": "456 Elm St",
+                "email": "JohnDoe@example.com"
+            },
+            "pharmacy": {
+                "name": "ABC Pharmacy",
+                "address": "123 Main St"
+            },
+            "vital_signs": {
+                "blood_pressure": "120/80",
+                "heart_rate": 72,
+                "date_of_readings": "2025-02-20"
+            },
+            "medications": [
+                {
+                    "drug_name": "Lisinopril",
+                    "strength": "10mg",
+                    "repeats": 2
+                },
+                {
+                    "drug_name": "Atorvastatin",
+                    "strength": "20mg",
+                    "repeats": 1
+                }
+            ]
+        }
+    },
+    {
+        "email": "JohnDoe@example.com",
+        "subject": "",
+        "message_id": "<CANfWoJCTTZsZ3zes5Ohm-DGjbBJXuV7S40y7s76m7vhXOhc4kg@mail.gmail.com>",
+        "extracted_data": {
+            "patient_details": {
+                "name": "John Doe",
+                "address": "456 Elm St",
+                "email": "JohnDoe@example.com"
+            },
+            "pharmacy": {
+                "name": "ABC Pharmacy",
+                "address": "123 Main St"
+            },
+            "vital_signs": {
+                "blood_pressure": "120/80",
+                "heart_rate": 72,
+                "date_of_readings": "2025-02-20"
+            },
+            "medications": {
+                "drug_name": [
+                    "Lisinopril",
+                    "Atorvastatin"
+                ],
+                "strength": [
+                    "10mg",
+                    "20mg"
+                ],
+                "repeats": [
+                    2,
+                    1
+                ]
+            }
+        }
+    }
+]
