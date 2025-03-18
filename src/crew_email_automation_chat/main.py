@@ -13,17 +13,17 @@ def run():
     """
     Run the crew in an infinite loop.
     """
-    inputs = {
-        'email_body': 'sample_value',
-        'patient_data_json': 'sample_value',
-        'required_fields': 'sample_value',
-        'validation_result': 'sample_value',
-        'smtp_connection': 'sample_value',
-        'mail_type': 'sample_value',
-        'missing_fields': 'sample_value',
-        'email_sent_confirmation': 'sample_value'
-    }
-    CrewEmailAutomationChatCrew().crew().kickoff(inputs=inputs)
+    # inputs = {
+    #     'email_body': 'sample_value',
+    #     'patient_data_json': 'sample_value',
+    #     'required_fields': 'sample_value',
+    #     'validation_result': 'sample_value',
+    #     'smtp_connection': 'sample_value',
+    #     'mail_type': 'sample_value',
+    #     'missing_fields': 'sample_value',
+    #     'email_sent_confirmation': 'sample_value'
+    # }
+    CrewEmailAutomationChatCrew().crew().kickoff()
 
     # while True:
     #     print("🚀 Running CrewEmailAutomationChatCrew...")
